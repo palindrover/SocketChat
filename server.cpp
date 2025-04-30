@@ -16,7 +16,7 @@ int main()
     
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(SERVER_PORT);
-    serverAddress.sin_addr.s_addr = inet_addr(SERVER_ADDRESS);
+    serverAddress.sin_addr.s_addr = inet_addr(defineIP().c_str());
     
     if (bind(serverSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) < 0)
     {

@@ -15,6 +15,7 @@ int main()
 
     std::cout << "Input server IP\n";
     std::cin >> serverIP;
+    if (serverIP == "self") serverIP = defineIP();
 
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(SERVER_PORT);
