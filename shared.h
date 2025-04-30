@@ -12,8 +12,8 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
+#include <stdio.h>
 
-#define SERVER_ADDRESS "server IP"
 #define SERVER_PORT 8000
 
 std::string defineIP();
